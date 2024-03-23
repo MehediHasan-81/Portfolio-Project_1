@@ -1,0 +1,597 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Email Template Design</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+        /* CLIENT-SPECIFIC STYLES */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* RESET STYLES */
+        img {
+            border: 0;
+            outline: none;
+            text-decoration: none;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            font-family: "Roboto", sans-serif;
+        }
+
+        /* iOS BLUE LINKS */
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* ANDROID CENTER FIX */
+        div[style*="margin: 16px 0;"] {
+            margin: 0 !important;
+        }
+
+        /* MEDIA QUERIES FOR RESPONSIVE COLUMN */
+        @media all and (max-width: 599px) {
+            .wrapper {
+                width: 320px !important;
+                padding: 0 !important;
+            }
+
+            .container {
+                width: 300px !important;
+                padding: 0 !important;
+            }
+
+            .mobile {
+                width: 300px !important;
+                display: block !important;
+                padding: 0 !important;
+            }
+
+            .img {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            *[class="mobileOff"] {
+                width: 0px !important;
+                display: none !important;
+            }
+
+            *[class*="mobileOn"] {
+                display: block !important;
+                max-height: none !important;
+            }
+
+            .about_big_text {
+                font-size: 24px !important;
+                line-height: 32px !important;
+                padding-bottom: 10px !important;
+            }
+
+            .about_small_text {
+                font-size: 20px !important;
+                line-height: 30px !important;
+            }
+
+            .header_sec {
+                padding: 40px 40px !important;
+            }
+
+            .footer_link {
+                padding: 0 5px !important;
+            }
+
+            .footer_communication {
+                padding: 0px !important;
+                font-size: 11px !important;
+            }
+
+            .footer_copy {
+                font-size: 11px !important;
+            }
+
+        }
+
+        /* Hybrid Column CSS */
+        @media only screen and (max-width: 580px) {
+            .wrapper {
+                width: 95% !important;
+            }
+
+            table,
+            div {
+                max-width: 100% !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin:0; padding:0;">
+    <center>
+        <!-- Primary Table  -->
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" border="0">
+            <tr>
+                <td align="center" valign="top">
+                    <!-- Don't Touch Upper Table  -->
+
+                    <!-- Header -->
+                    <table width="600" cellspacing="0" cellpadding="0" border="0" align="center"
+                        style="max-width: 600px; width: 100%;" bgcolor="#FFFFFF">
+                        <tr>
+                            <td align="center" valign="top">
+                                <table width="600" cellspacing="0" cellpadding="0" border="0" align="center"
+                                    style="max-width: 600px; width: 100%; padding: 40px 20px; display: inline-block;"
+                                    class="header_sec">
+                                    <tr>
+                                        <td width="300" align="left" valign="middle">
+                                            <img src="https://i.postimg.cc/hjmGbCdm/mehedi-hasan.jpg" width="100%"
+                                                style="
+                           margin: 0;
+                           padding: 0;
+                           border: none;
+                           display: block;
+                           max-width: 122px;
+                           border-radius: 50%;
+                           " border="0" class="img" alt="image" />
+                                        </td>
+                                        <td width="300" align="right" valign="middle"
+                                            style="font-size: 17px; font-family: Roboto, sans-serif; color: #a3a3a3; font-weight: 700;">
+                                            FEB 20 — FEB 27
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- Header -->
+
+                    <!-- ? About  -->
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" border="0">
+                        <tr>
+                            <td align="center" height="100%" valign="top" width="100%" style="padding: 0px 18px;">
+                                <!--[if (gte mso 9)|(IE)]>
+                                      <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+                                      <tr>
+                                      <td align="center" valign="top" width="600">
+                                      <![endif]-->
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
+                                    style="max-width: 600px;" bgcolor="#ffffff">
+                                    <tr>
+                                        <td align="left" valign="middle"
+                                            style="font-size: 42px; padding: 10px; font-family: Roboto, sans-serif; font-weight: 100; line-height: 54px; color: #1a1a1a; padding: 0px 18px;"
+                                            class="about_big_text">
+                                            The most popular posts of the last week on Mailto
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="middle"
+                                            style="font-size: 28px; padding: 10px; font-family: Roboto, sans-serif; font-weight: 100; line-height: 45px; color: #5e5e5e; padding: 0px 18px;"
+                                            class="about_small_text">
+                                            Ready-to-use email templates converting prospects into paying customers
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                      </td>
+                                      </tr>
+                                      </table>
+                                      <![endif]-->
+                            </td>
+                        </tr>
+                    </table>
+
+                    <!-- ? About  -->
+
+                    <!-- Feature -->
+                    <table width="600" cellpadding="0" cellspacing="0" border="0" class="wrapper" bgcolor="#FFFFFF">
+                        <!-- SPACE -->
+                        <tr>
+                            <td height="10" style="font-size: 10px; line-height: 10px">&nbsp;</td>
+                        </tr>
+                        <!-- SPACE -->
+                        <tr>
+                            <td align="center" valign="top">
+                                <table width="600" cellpadding="0" cellspacing="0" border="0" class="container"
+                                    style="display: inline-block; padding: 0px 20px 0px 0px ;">
+                                    <tr>
+                                        <td width="300" class="mobile" align="center" valign="top" bgcolor="#ffffff"
+                                            style="padding: 0px 20px;">
+                                            <!-- Inner -->
+                                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                <tr>
+                                                    <td align="left" valign="top">
+                                                        <img src="https://i.postimg.cc/V6Y4rq62/img-2-right.png"
+                                                            width="100%" style="
+                                                           margin: 0;
+                                                           padding: 0;
+                                                           border: none;
+                                                           display: block;
+                                                           max-width: 600px;
+                                                           " border="0" class="img" alt="image" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" valign="top"
+                                                        style="font-size: 16px; line-height: 45px; font-weight: 700; color: #727fc9;">
+                                                        Email campaigns
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" valign="top"
+                                                        style="font-size: 22px; line-height: 33px; font-weight: 300; color: #101010;">
+                                                        Effective email marketing techniques backed by data.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" valign="top"
+                                                        style="font-size: 17px; line-height: 33px; font-weight: regular; color: #7f7f7fbd;">
+                                                        230 comments · 54,000 views
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- Inner -->
+
+                                        </td>
+                                        <td width="300" class="mobile" align="center" valign="top" bgcolor="#ffffff">
+                                            <!-- Inner -->
+                                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                <tr>
+                                                    <td align="left" valign="top">
+                                                        <img src="https://i.postimg.cc/x88Rg9LR/img-1-left.png"
+                                                            width="100%" style="
+                                                           margin: 0;
+                                                           padding: 0;
+                                                           border: none;
+                                                           display: block;
+                                                           max-width: 600px;
+                                                           " border="0" class="img" alt="image" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" valign="top"
+                                                        style="font-size: 16px; line-height: 45px; font-weight: 700; color: #727fc9;">
+                                                        Marketing
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" valign="top"
+                                                        style="font-size: 22px; line-height: 33px; font-weight: 300; color: #101010;">
+                                                        Elements of a good email permission reminder.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" valign="top"
+                                                        style="font-size: 17px; line-height: 33px; font-weight: regular; color: #7f7f7fbd;">
+                                                        60 comments · 25,000 views
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- Inner -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="300" class="mobile" align="center" valign="top" bgcolor="#ffffff"
+                                            style="padding: 0px 20px;">
+
+                                            <!-- Inner -->
+                                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                <tr>
+                                                    <td align="left" valign="top">
+                                                        <img src="https://i.postimg.cc/5yrmRD3M/img-3.png" width="100%"
+                                                            style="
+                                                       margin: 0;
+                                                       padding: 0;
+                                                       border: none;
+                                                       display: block;
+                                                       max-width: 600px;
+                                                       " border="0" class="img" alt="image" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" valign="top"
+                                                        style="font-size: 16px; line-height: 45px; font-weight: 700; color: #727fc9;">
+                                                        Marketing
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" valign="top"
+                                                        style="font-size: 20px; line-height: 33px; font-weight: 300; color: #101010;">
+                                                        The best email marketing case studies you've ever seen.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" valign="top"
+                                                        style="font-size: 17px; line-height: 33px; font-weight: regular; color: #7f7f7fbd;">
+                                                        24 comments · 4,200 views
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- Inner -->
+                                        </td>
+                                        <td width="300" class="mobile" align="center" valign="top" bgcolor="#ffffff">
+
+                                            <!-- Inner -->
+                                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                <tr>
+                                                    <td align="left" valign="top">
+                                                        <img src="https://i.postimg.cc/50ngwXQy/img-4.png" width="100%"
+                                                            style="
+                                                           margin: 0;
+                                                           padding: 0;
+                                                           border: none;
+                                                           display: block;
+                                                           max-width: 600px;
+                                                           " border="0" class="img" alt="image" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" valign="top"
+                                                        style="font-size: 16px; line-height: 45px; font-weight: 700; color: #727fc9;">
+                                                        Email campaigns
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" valign="top"
+                                                        style="font-size: 20px; line-height: 33px; font-weight: 300; color: #101010;">
+                                                        Connect with your customers and make more sales.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" valign="top"
+                                                        style="font-size: 17px; line-height: 33px; font-weight: regular; color: #7f7f7fbd;">
+                                                        60 comments · 54,000 views
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- Inner -->
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- SPACE -->
+                        <tr>
+                            <td height="10" style="font-size: 10px; line-height: 10px">&nbsp;</td>
+                        </tr>
+
+                        <!-- SPACE -->
+                    </table>
+
+                    <!-- Feature -->
+
+                    <!-- Button -->
+
+                    <table width="600" cellpadding="0" cellspacing="0" border="0" class="wrapper" bgcolor="#FFFFFF">
+                        <!-- SPACE  -->
+                        <tr>
+                            <td height="10" style="font-size: 10px; line-height: 10px">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <!-- SPACE  -->
+                        <tr>
+                            <td align="center" valign="top">
+                                <table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <!-- Button -->
+                                            <table width="175" height="35" cellpadding="0" cellspacing="0" border="0"
+                                                bgcolor="#27CBCC" style="border-radius: 5px;">
+                                                <tr>
+                                                    <td align="center" valign="middle" height="35" style="
+                                                                font-size: 14px;
+                                                              ">
+                                                        <a href="#" target="_blank" style="
+                                                                  color: #ffffff;
+                                                                  display: inline-block;
+                                                                  text-decoration: none;
+                                                                  line-height: 35px;
+                                                                  width: 175px; text-transform: uppercase;
+                                                                ">More Details
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- Button -->
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- SPACE  -->
+                        <tr>
+                            <td height="10" style="font-size: 10px; line-height: 10px">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <!-- SPACE  -->
+                    </table>
+                    <!-- Button -->
+                    <!-- Footer -->
+                    <table width="600" cellspacing="0" cellpadding="0" border="0" align="center"
+                        style="max-width: 600px; width: 100%; padding: 0 10px; display: inline-block;">
+                        <tr>
+                            <td align="center" valign="top" style="padding: 10px">
+                                <table width="600" cellspacing="0" cellpadding="0" border="0" align="center"
+                                    style="max-width: 600px; width: 100%;">
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <hr>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="10" style="font-size:10px; line-height:10px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" valign="top"
+                                            style="text-align: justify; font-size: 17px; color: #767676; padding: 10px 0 15px 0;">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.<a href="#"
+                                                style="text-decoration: none; font-weight: 700; color: #0c0c0c;">unsubscribe</a>
+                                            officia magni.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- Footer Link -->
+                    <table width="600" cellspacing="0" cellpadding="0" border="0" align="center"
+                        style="max-width: 600px; width: 100%; background-color: #f0f0f3;">
+                        <tr>
+                            <td align="center" valign="top" style="padding: 10px">
+                                <table width="600" cellspacing="0" cellpadding="0" border="0" align="center"
+                                    style="max-width: 600px; width: 100%;">
+                                    <tr>
+                                        <td align="center" valign="top" style="padding: 35px 0px;">
+                                            <a href="#" target="_blank"
+                                                style="color:#0e0f0f; text-decoration:none; padding: 0 25px; font-weight: 700; letter-spacing: 1.5;"
+                                                class="footer_link">Help
+                                                Center</a> .
+                                            <a href="#" target="_blank"
+                                                style="color:#0e0f0f; text-decoration:none; padding: 0 25px; font-weight: 700; letter-spacing: 1.5;"
+                                                class="footer_link">Support
+                                                24/7</a> .
+                                            <a href="#" target="_blank" style="color:#0e0f0f; text-decoration:none; padding: 0 25px; font-weight: 700;
+                                                letter-spacing: 1.5;" class="footer_link">Account</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- Footer Link -->
+                    <!-- Copyright -->
+                    <table width="600" cellspacing="0" cellpadding="0" border="0" align="center"
+                        style="max-width: 600px; width: 100%; background-color: #f0f0f3;">
+                        <tr>
+                            <td align="center" valign="top" style="padding: 10px">
+                                <table width="600" cellspacing="0" cellpadding="0" border="0" align="center"
+                                    style="max-width: 600px; width: 100%;">
+                                    <tr>
+                                        <td align="center" valign="top"
+                                            style="padding: 0 0 10px 0; color: #524848; font-size: 15px;"
+                                            class="footer_copy">
+                                            Copyright @ 2024 Mailto. All Rights Reserved. We Appreciate You!
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" valign="top" class="footer_communication">
+                                            <a href="tell:01717236076" target="_blank"
+                                                style="color:#767676; text-decoration:none; padding: 0 10px; font-weight: 700; font-size: 13px;"
+                                                class="footer_communication">01717236076</a>
+                                            |
+                                            <a href="mailto:mehedihasanyeath@gmail.com" target="_blank"
+                                                style="color:#767676; text-decoration:none; padding: 0 10px; font-weight: 700; font-size: 13px;"
+                                                class="footer_communication">mehedihasanyeath@gmail.com</a>
+                                            |
+                                            <a href="#" target="_blank"
+                                                style="color:#767676; text-decoration:none; padding: 0 10px; font-weight: 700; font-size: 13px;"
+                                                class="footer_communication">unsubscribe</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- Copyright -->
+                    <!-- Social -->
+                    <table width="600" cellspacing="0" cellpadding="0" border="0" align="center"
+                        style="max-width: 600px; width: 100%; background-color: #ffffff;">
+                        <tr>
+                            <td align="center" valign="top" style="padding: 10px">
+                                <table width="600" cellspacing="0" cellpadding="0" border="0" align="center"
+                                    style="max-width: 600px; width: 100%">
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <a href="#" target="_blank" style=text-decoration:none;"><img
+                                                    src="https://i.postimg.cc/yxpKWgzg/c.jpg" width="100%" style="
+                                               margin: 0;
+                                               padding: 0;
+                                               padding-right: 20px;
+                                               border: none;
+                                               display: inline-block;
+                                               max-width: 30px;
+                                               " border="0" class="img" alt="image" /></a>
+                                            <a href="#" target="_blank" style="text-decoration:none;"><img
+                                                    src="https://i.postimg.cc/kMhGkpjR/call.jpg" width="100%" style="
+                                                  margin: 0;
+                                                  padding: 0;
+                                                  padding-right: 20px;
+                                                  border: none;
+                                                  display: inline-block;
+                                                  max-width: 30px;
+                                                  " border="0" class="img" alt="image" /></a>
+                                            <a href="#" target="_blank" style=text-decoration:none;"><img
+                                                    src="https://i.postimg.cc/MT3ZJnYJ/Social-Icon.jpg" width="100%"
+                                                    style="
+                                                     margin: 0;
+                                                     padding: 0;
+                                                     padding-right: 20px;
+                                                     border: none;
+                                                     display: inline-block;
+                                                     max-width: 30px;
+                                                     " border="0" class="img" alt="image" /></a>
+                                            <a href="#" target="_blank" style=text-decoration:none;"><img
+                                                    src="https://i.postimg.cc/vBZ8Krfv/mail.jpg" width="100%" style="
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        border: none;
+                                                        display: inline-block;
+                                                        max-width: 30px;
+                                                        " border="0" class="img" alt="image" /></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- Social -->
+
+                    <!-- Footer -->
+
+                    <!-- Don't Touch Upper Table  -->
+                </td>
+            </tr>
+        </table>
+        <!-- Primary Table  -->
+    </center>
+</body>
+
+</html>
